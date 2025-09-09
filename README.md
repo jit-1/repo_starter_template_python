@@ -379,6 +379,45 @@ If you have any questions or need help:
 6. For questions: Use the **Question** template
 7. For documentation: Use the **Documentation Update** template
 
+### 📝 How to Use Issue Templates
+
+When creating a new issue on GitHub, you'll see several template options. Here's how to use them effectively:
+
+#### 🐛 Bug Report Template
+**When to use**: Something isn't working as expected
+**What to include**:
+- Clear description of the bug
+- Step-by-step reproduction instructions
+- Expected vs actual behavior
+- Environment details (OS, Python version, Poetry version)
+- Screenshots if applicable
+- Error messages or logs
+
+#### ✨ Feature Request Template
+**When to use**: You want to suggest a new feature or enhancement
+**What to include**:
+- Brief summary of the feature
+- Problem it solves
+- Proposed solution
+- Use case examples
+- Alternative solutions considered
+
+#### ❓ Question Template
+**When to use**: You need help or clarification
+**What to include**:
+- Clear question
+- Context/background information
+- What you've already tried
+- Environment details
+
+#### 📚 Documentation Template
+**When to use**: Documentation needs improvement
+**What to include**:
+- Current state description
+- What needs to be updated
+- Proposed changes
+- Additional context
+
 ## 🏆 Best Practices Included
 
 - **Code Formatting**: Black for consistent code style
