@@ -2,61 +2,51 @@
 
 A comprehensive starter template for Python projects with modern development tools, best practices, and automated quality checks.
 
-## 🚀 Feat### Dependencies
+[![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)](https://python.org)
+[![Poetry](https://img.shields.io/badge/poetry-managed-blue.svg)](https://python-poetry.org)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen)](https://github.com/pre-commit/pre-commit)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
-Add your dependencies using Poetry:
+## 🚀 Features
 
-```bash
-# Add runtime dependency
-poetry add requests
-
-# Add development dependency
-poetry add --group dev pytest
-
-# Add dependency with specific version
-poetry add "numpy>=1.20.0"
-```
-
-Update `pyproject.toml` Poetry section:
-
-```toml
-[tool.poetry.dependencies]
-python = "^3.12"
-requests = "^2.31.0"
-numpy = "^1.24.0"
-# Add your dependencies here
-
-[tool.poetry.group.dev.dependencies]
-black = "^23.12.0"
-# Add your dev dependencies here
-```ern Python Setup**: Configured for Python 3.12+
+- **Modern Python Setup**: Configured for Python 3.12+
+- **Dependency Management**: Poetry for reliable package management
 - **Code Quality Tools**: Black, isort, flake8, mypy, bandit
 - **Testing Framework**: pytest with coverage reporting
 - **Git Hooks**: Pre-commit hooks for automated code quality
 - **Conventional Commits**: Commitizen for standardized commit messages
-- **Development Dependencies**: Organized in pyproject.toml
-- **Project Structure**: Well-organized directory layout
-- **Documentation**: Contributing guidelines and development setup
+- **GitHub Integration**: Issue templates and professional workflow
+- **Documentation**: Comprehensive contributing guidelines
+- **CI/CD Ready**: Pre-configured for automated testing and deployment
 
 ## 📁 Project Structure
 
 ```
-├── src/                    # Source code
+├── src/                        # Source code
 │   ├── __init__.py
 │   └── main.py
-├── tests/                  # Test files
+├── tests/                      # Test files
 │   ├── __init__.py
 │   └── test_main.py
-├── docs/                   # Documentation
-├── .github/               # GitHub configuration
-│   └── ISSUE_TEMPLATES/   # Issue templates
-├── .pre-commit-config.yaml # Pre-commit hooks configuration
-├── pyproject.toml         # Poetry project configuration
-├── poetry.lock            # Poetry lock file (generated)
-├── .gitignore            # Git ignore rules
-├── CONTRIBUTING.md       # Contributing guidelines
-├── LICENSE               # License file
-└── README.md             # This file
+├── docs/                       # Documentation
+├── .github/                    # GitHub configuration
+│   └── ISSUE_TEMPLATES/        # Issue templates
+│       ├── bug_report.md
+│       ├── feature_request.md
+│       ├── documentation.md
+│       └── question.md
+├── .pre-commit-config.yaml     # Pre-commit hooks configuration
+├── .python-version            # Python version for Poetry
+├── pyproject.toml             # Poetry project configuration
+├── poetry.lock                # Poetry lock file (generated)
+├── .gitignore                 # Git ignore rules
+├── .flake8                    # Flake8 configuration
+├── .bandit                    # Bandit security configuration
+├── .markdownlint.json         # Markdown linting configuration
+├── CONTRIBUTING.md            # Contributing guidelines
+├── LICENSE                    # License file
+└── README.md                  # This file
 ```
 
 ## 🛠️ Quick Start
@@ -64,7 +54,7 @@ black = "^23.12.0"
 ### Prerequisites
 
 - Python 3.12 or higher
-- Poetry (Python dependency management)
+- Poetry (Python dependency management tool)
 
 ### Install Poetry
 
@@ -191,28 +181,41 @@ poetry run cz version
 Update `pyproject.toml`:
 
 ```toml
-[project]
+[tool.poetry]
 name = "your-project-name"
 version = "0.1.0"
 description = "Your project description"
-authors = [
-    {name = "Your Name", email = "your.email@example.com"},
-]
+authors = ["Your Name <your.email@example.com>"]
 ```
 
 ### 2. Dependencies
 
-Add your dependencies to `pyproject.toml`:
+Add your dependencies using Poetry:
 
-```toml
-dependencies = [
-    "requests",
-    "numpy",
-    # Add your dependencies here
-]
+```bash
+# Add runtime dependency
+poetry add requests
+
+# Add development dependency
+poetry add --group dev pytest
+
+# Add dependency with specific version
+poetry add "numpy>=1.20.0"
 ```
 
-Or to `requirements.txt` for simple projects.
+Update `pyproject.toml` Poetry section:
+
+```toml
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+numpy = "^1.24.0"
+# Add your dependencies here
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+# Add your dev dependencies here
+```
 
 ### 3. Source Code
 
@@ -375,6 +378,19 @@ If you have any questions or need help:
 5. For features: Use the **Feature Request** template
 6. For questions: Use the **Question** template
 7. For documentation: Use the **Documentation Update** template
+
+## 🏆 Best Practices Included
+
+- **Code Formatting**: Black for consistent code style
+- **Import Sorting**: isort for clean imports
+- **Linting**: flake8 for code quality
+- **Type Checking**: mypy for static type analysis
+- **Security Scanning**: bandit for security vulnerabilities
+- **Testing**: pytest with coverage reporting
+- **Git Hooks**: Automated quality checks
+- **Conventional Commits**: Standardized commit messages
+- **Version Management**: Automated semantic versioning
+- **Documentation**: Comprehensive guides and templates
 
 ---
 
